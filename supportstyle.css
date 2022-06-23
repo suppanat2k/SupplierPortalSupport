@@ -90,7 +90,6 @@
 
 @media (max-width:995px){
     .login, .cost, .deal, .invoice {
-        border: 1px solid red;
         height: 60%;
     }
 }
@@ -105,7 +104,6 @@
     }
 
     .login, .cost, .deal, .invoice {
-        border: 1px solid red;
         width: 80%;
         height: 100%;
     }
