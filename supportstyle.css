@@ -12,6 +12,7 @@
     box-shadow: 5px 5px 20px black;
     border-radius: 5px;
     overflow: hidden;
+    transition: .5s;
 }
 
 .intro{
@@ -22,18 +23,18 @@
     padding: 2% 5%;
     background-color: rgba(0, 0, 0, 0.2);
     color: white;
-    transition-duration: .5s;
+    transition-duration: .4s;
     visibility: hidden;
 }
 
 .menu h4{
     background-color: rgba(0, 0, 0, 0.2);
     margin: 0%;
-    transition-duration: .5s;
+    transition-duration: .4s;
 }
 
 .login:hover, .cost:hover, .invoice:hover, .deal:hover {
-
+    transform:translateY(-15px);
 }
 
 .login:hover .intro, .cost:hover .intro, .invoice:hover .intro, .deal:hover .intro {
@@ -92,6 +93,13 @@
     .login, .cost, .deal, .invoice {
         height: 60%;
     }
+
+    .menu h4{
+        font-size: medium;
+    }
+    .intro .tab {
+        font-size: 12px;
+    }
 }
 
 @media (max-width:575px){
@@ -101,6 +109,14 @@
         height: 2000px;
         align-items: center;
         gap: 50px;
+    }
+
+    .menu h4{
+        font-size: 25px;
+    }
+
+    .intro .tab {
+        font-size: medium;
     }
 
     .login, .cost, .deal, .invoice {
