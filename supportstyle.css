@@ -19,34 +19,39 @@
     width: auto;
     height: auto;
     box-sizing: border-box;
-    position: relative;
-    padding: 2% 5%;
-    background-color: rgba(0, 0, 0, 0.2);
     color: white;
-    transition-duration: .4s;
+    overflow: hidden;
+    background-color:rgba(0, 0, 0, 0.7);
     visibility: hidden;
 }
 
-.menu h4{
-    background-color: rgba(0, 0, 0, 0.2);
+.menu h4 {
+    color: rgb(255, 187, 0);
+    background-color:rgba(0, 0, 0, 0.3);
     margin: 0%;
-    transition-duration: .4s;
+}
+
+.menu ul {
+    transform: translateY(-140%);
+    transition: 1s;
+    position: relative;
 }
 
 .login:hover, .cost:hover, .invoice:hover, .deal:hover {
     transform:translateY(-15px);
 }
 
-.login:hover .intro, .cost:hover .intro, .invoice:hover .intro, .deal:hover .intro {
+.login:hover .intro, .cost:hover .intro, .invoice:hover .intro, .deal:hover .intro{
     visibility: visible;
-    background-color:rgba(0, 0, 0, 0.6);
-    position: relative;
 }
 
-.login:hover h4, .cost:hover h4, .invoice:hover h4, .deal:hover h4 {
-    background-color: rgba(0, 0, 0, 0.6);
+.login:hover ul, .cost:hover ul, .invoice:hover ul, .deal:hover ul{
+    transform: translateY(0%);
 }
 
+.login:hover h4, .cost:hover h4, .invoice:hover h4, .deal:hover h4{
+    background-color:rgba(0, 0, 0, 0.7);
+}
 
 .menu img{
     width: 100%;
@@ -134,3 +139,5 @@ nav ul li:hover {
     border-radius: 5px;
 
 }
+
+
