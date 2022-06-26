@@ -1,7 +1,11 @@
+*{
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+
 .section1{
-    height: fit-content;
+    height: 100vh;
     position: relative;
-    padding: 3% 0%;
+    padding: 5% 0%;
     box-shadow: 5px 5px 50px;
 }
 
@@ -52,6 +56,7 @@
     color: rgb(255, 187, 0);
     background-color:rgba(0, 0, 0, 0.3);
     margin: 0%;
+    font-weight: 600;
 }
 
 .menu ul {
@@ -181,6 +186,10 @@ nav ul li:hover {
 }
 
 @media (max-width:995px){
+    .section1{
+        height: fit-content;
+    }
+    
     .login, .cost, .deal, .invoice {
         height: 25rem;
         width: 24%;
@@ -225,6 +234,10 @@ nav ul li:hover {
 }
 
 @media (max-width:575px){
+    .section1{
+        height: fit-content;
+    }
+    
     .menu{
         margin-top: 10%;
         flex-direction:column;
@@ -259,13 +272,13 @@ nav ul li:hover {
     .powrong, .adduser{
         width: 90%;
         height: 50%;
-        font-size: 70%;
+        font-size: 60%;
     }
 
     .powrong:hover, .adduser:hover{
         width: 90%;
         height: 100%;
-        font-size: 80%;
+        font-size: 70%;
     }
 }
 
