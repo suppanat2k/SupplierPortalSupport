@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="supportstyle.css">
     <link rel="stylesheet" href="aboutstyle.css">
     <link rel="stylesheet" href="contactstyle.css">
+    <link rel="stylesheet" href="popstyle.css">
     <script src="https://kit.fontawesome.com/be962443d3.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Nav -->
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
         <div class="container-fluid nav">
             <a href="" class="navbar-brand fs-3 fw-bold ps-4"><i class="fa-solid fa-headset text-warning"></i> Toolkit Support</a>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#togglelist">
@@ -42,6 +43,7 @@
                         <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" id="button1">เข้าระบบครั้งแรก</a></li>
                         <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" id="button1">เข้าลิ้งค์แล้วขึ้น Block pop-up</a></li>
                         <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" id="button1">การแก้ไขรหัสผ่าน</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" id="button1">การเพิ่มผู้ใช้งานย่อย</a></li>
                     </ul>
                 </div>
             </div>
@@ -49,9 +51,8 @@
                 <h4 class="p-3 ">MyLotus's Cost</h4>
                 <div class="intro p-2">
                     <ul class="navbar-nav tab">
-                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" id="button1">เข้าระบบครั้งแรก</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" id="button1">เข้าลิ้งค์แล้วขึ้น Block pop-up</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" id="button1">การแก้ไขรหัสผ่าน</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" onclick="toggle(1);">การปรับราคาทุน(Form)</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" onclick="toggle(2);">การปรับราคาทุน(Upload)</a></li>
                     </ul>
                 </div>
             </div>
@@ -59,9 +60,9 @@
                 <h4 class="p-3 ">MyLotus's Off-invoice</h4> 
                 <div class="intro p-2">                             
                     <ul class="navbar-nav tab">
-                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" id="button1">เข้าระบบครั้งแรก</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" id="button1">เข้าลิ้งค์แล้วขึ้น Block pop-up</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" id="button1">การแก้ไขรหัสผ่าน</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" onclick="toggle(3);">การเสนอส่วนลดท้ายบิล(Form)</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" onclick="toggle(4);">การเสนอส่วนลดท้ายบิล(Upload)</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" onclick="toggle(5);">การแก้ไข/ยกเลิกส่วนลดท้ายบิล</a></li>
                     </ul>
                 </div>
             </div>
@@ -69,9 +70,7 @@
                 <h4 class="p-3 ">MyLotus's Deals</h4>
                 <div class="intro p-2">
                     <ul class="navbar-nav tab">
-                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" id="button1">เข้าระบบครั้งแรก</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" id="button1">เข้าลิ้งค์แล้วขึ้น Block pop-up</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" id="button1">การแก้ไขรหัสผ่าน</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" onclick="toggle(6);">การ อนุมัติ/ปฏิเสธ/ขอแก้ไข ข้อตกลง</a></li>
                     </ul>
                 </div>
             </div>
@@ -157,8 +156,23 @@
         </div>
     </div>
     
-    <!-- <div class="video1 position-fixed"></div> -->
+    <!-- div pop-up -->
+    <!-- Pop-up slide -->
+    <!-- <div class="container-fluid plate1 position-fixed fixed-top">
+        <div class="container popslide position-fixed">
+            <p class="text-end p-3"><a href="#" id="close" onclick=""><i class="fa-solid fa-x"></i></a></p>
+            
+        </div>
+    </div> -->
 
+
+    <!-- video cost form -->
+    <div class="container-fluid plate position-fixed fixed-top">
+        <div class="container video5 position-fixed">
+            <p class="text-end p-3"><a href="#" id="close" onclick="toggle();"><i class="fa-solid fa-x"></i></a></p>
+            <video controls src="" type="video/mp.4"></video>
+        </div>
+    </div>
 
     <!-- script -->
     <script src="app.js"></script>

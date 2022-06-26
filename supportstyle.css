@@ -127,6 +127,7 @@ nav ul li:hover {
     border-radius: 5px;
 }
 
+
 .menu2{
     height: 200px;
     display: flex;
@@ -282,17 +283,3 @@ nav ul li:hover {
     }
 }
 
-
-
-
-/* .video1{
-    width: 80%;
-    height: 80%;
-    background-color: grey;
-    position:absolute;
-    top: 10%;
-    left: 10%;
-    box-shadow: 5px 5px 10px;
-    border-radius: 20px;
-    display: none;
-} */

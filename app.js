@@ -12,12 +12,46 @@ function reveal() {
         reveals[i].classList.remove("active");
       }
     }
-  }
+}
   
-  window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", reveal);
 
+let num;
+function toggle(num) {
+  var video = document.querySelector(".plate");
+  video.classList.toggle("activevideo");
+  var video = document.querySelector("video");
+  video.classList.toggle("activevideo");
 
+  if(num==1){
+    video.src = ('video/video-cost/cost-form.mp4');
+    return;
+  }
+  if(num==2){
+    video.src = ('video/video-cost/cost-upload.mp4');
+    return;
+  }
+  if(num==3)
+  {
+    video.src = ('video/video-invoice/invoice-form.mp4');
+    return;
+  }
+  if(num==4)
+  {
+    video.src = ('video/video-invoice/invoice-upload.mp4');
+    return;
+  }
+  if(num==5)
+  {
+    video.src = ('video/video-invoice/invoice-amend.mp4');
+    return;
+  }
+  if(num==6)
+  {
+    video.src = ('video/video-deals/video-deal1.mp4');
+    return;
+  }
 
-// document.getElementById("button1").addEventListener("click", function(){
-//     document.querySelector(".video1").style.display = "flex";
-// })
+  video.pause();
+  video.currentTime = 0;
+}
