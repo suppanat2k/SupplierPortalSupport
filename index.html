@@ -40,10 +40,10 @@
                 <h4 class="p-3 ">Toolkit Login/User</h4>
                 <div class="intro p-2">
                     <ul class="navbar-nav tab">
-                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" id="button1">เข้าระบบครั้งแรก</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" id="button1">เข้าลิ้งค์แล้วขึ้น Block pop-up</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" id="button1">การแก้ไขรหัสผ่าน</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" id="button1">การเพิ่มผู้ใช้งานย่อย</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" onclick="toggle2(1);">เข้าระบบครั้งแรก</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" onclick="toggle2(2);">เข้าลิ้งค์แล้วขึ้น Block pop-up</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" onclick="toggle2(3);">การแก้ไขรหัสผ่าน</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-light p-2 choice" onclick="toggle2(4);">การเพิ่มผู้ใช้งานย่อย</a></li>
                     </ul>
                 </div>
             </div>
@@ -77,7 +77,7 @@
         </div>
 
         <div class="container menu2">
-            <div class="powrong">
+            <div class="powrong" onclick="toggle2(5);">
                 <div class="textPO p-2">
                     <p class="fw-bold m-0 header">PO WRONG!</p>
                     <p class="fw-bold m-0 header2">ขั้นตอนการขอแก้ไขเมื่อใบแจ้งหนี้ผิด</p>
@@ -86,7 +86,7 @@
                     <p class="m-0 list">- ราคาสุทธิ(Net cost) ในใบ PO ผิด</p>
                 </div>
             </div>
-            <div class="adduser">
+            <div class="adduser" onclick="toggle2(6);">
                 <div class="textADD p-2">
                     <p class="fw-bold m-0 header">Request New User</p>
                     <p class="fw-bold m-0 header2">การทำแบบฟอร์มขอเพิ่มผู้ใช้งาน</p>
@@ -157,20 +157,32 @@
     </div>
     
     <!-- div pop-up -->
-    <!-- Pop-up slide -->
-    <!-- <div class="container-fluid plate1 position-fixed fixed-top">
-        <div class="container popslide position-fixed">
-            <p class="text-end p-3"><a href="#" id="close" onclick=""><i class="fa-solid fa-x"></i></a></p>
-            
-        </div>
-    </div> -->
-
 
     <!-- video cost form -->
     <div class="container-fluid plate position-fixed fixed-top">
-        <div class="container video5 position-fixed">
+        <div class="container-fluid video5 position-fixed">
             <p class="text-end p-3"><a href="#" id="close" onclick="toggle();"><i class="fa-solid fa-x"></i></a></p>
             <video controls src="" type="video/mp.4"></video>
+        </div>
+    </div>
+
+    <!-- Pop-up slide -->
+    <div class="container-fluid plate2 position-fixed fixed-top">
+        <div class="container content">
+            <p class="text-end p-3"><a href="#" id="close" onclick="toggle2();"><i class="fa-solid fa-x"></i></a></p>
+            <div class="container frame">
+                <figure>
+                    <div class="con1"></div>
+                    <div class="con2"></div>
+                    <div class="con3"></div>
+                    <div class="con4"></div>
+                    <div class="con5"></div>
+                </figure>
+            </div>
+            <div class="gop">
+                <div class="pre" onclick="pre();"><i class="fa-solid fa-angle-left"></i> ก่อนหน้า</div>
+                <div class="go" onclick="next();">ถัดไป <i class="fa-solid fa-angle-right"></i></div>
+            </div>
         </div>
     </div>
 
