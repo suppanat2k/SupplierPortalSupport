@@ -80,7 +80,6 @@
     padding: 0%;
     overflow: hidden;
     border-radius: 10px;
-    
 }
 
 figure{
@@ -102,7 +101,6 @@ figure.activecontent{
     height: 100%;
     padding: 0.5%;
 }
-
 .con2{
     width: 20%;
     height: 100%;
@@ -164,49 +162,72 @@ figure.activecontent{
     background-color: black;
 }
 
+@media (max-width:1200px){
+    .content{
+        width: 100%;
+        height: 60%;
+    }
+    .go, .pre{
+        font-size: 16px;
+        margin: 0% 3%;
+    }
+    .plate2{
+        font-size: 14px;
+    }
+    .frame{
+        width: 98%;
+        height: 83%;
+        padding: 0%;
+    }
+}
+
 @media (max-width:995px){
-    .section3{
-        height: fit-content;
-        padding: 5%;
-    }
-    .contactorther{
-        flex-direction: column;
-        margin: 0%;
-    }
-    .map{
-        margin: 30% 50%;
+    .content{
         width: 100%;
+        height: fit-content;    
     }
-    .line{
-        margin: 15% 50%;
-        width: 100%;
+    .go, .pre{
+        font-size: 16px;
+        margin: 0% 3%;
     }
-    .contact1 .imgcon{
-        width: 100%;
+    .plate2{
+        font-size: 14px;
+        padding: 0%;
+    }
+    .frame{
+        width: 98%;
+        height: 83%;
+        padding: 0%;
+        overflow: hidden;
+        border-radius: 10px;
     }
 }
 
 @media (max-width:575px){
-    .section3{
-        height: fit-content;
-        padding: 5%;
-    }
-    .contactorther{
-        flex-direction: column;
-        margin: 0%;
-    }
-    .map{
-        margin: 30% 10%;
+    .content{
         width: 100%;
+        height: 50%;    
     }
-
-    .line{
-        margin: 15% 10%;
-        width: 100%;
+    .go, .pre{
+        font-size: 14px;
+        margin: 0% 3%;
     }
-    .contact1 .imgcon{
+    .plate2{
+        font-size: 12px;
+        padding: 0%;
+    }
+    .frame{
+        width: 98%;
+        height: 75%;
+        padding: 0%;
+        overflow: hidden;
+        border-radius: 10px;
+        overflow-y: scroll;
+    }
+    .imgcontent{
         width: 100%;
     }
 }
+
 
 
