@@ -60,53 +60,84 @@ function toggle(num) {
 function toggle2(num) {
   var content = document.querySelector(".plate2");
   content.classList.toggle("activecontent");
-  document.querySelector(".frame figure").style.transform = "translateX(0%)";
-  document.querySelector(".pre").style.visibility = "hidden";
-  document.querySelector(".go").style.visibility = "visible";
+  var content = document.querySelector(".costcontent1");
+  content.classList.remove("activecontent");
+  var content = document.querySelector(".costcontent2");
+  content.classList.remove("activecontent");
+  var content = document.querySelector(".costcontent3");
+  content.classList.remove("activecontent");
+  // var content = document.querySelector(".costcontent4");
+  // content.classList.remove("activecontent");
+  // var content = document.querySelector(".costcontent5");
+  // content.classList.remove("activecontent");
+  // var content = document.querySelector(".costcontent6");
+  // content.classList.remove("activecontent");
+  document.querySelector("figure").style.transform = "translateX(-0%)";
+  if(num==1){
+    var content = document.querySelector(".costcontent1");
+    content.classList.toggle("activecontent");
+    document.querySelector(".pre").style.visibility = "hidden";
+    document.querySelector(".go").style.visibility = "visible";
+    return;
+  }
+  if(num==2){
+    var content = document.querySelector(".costcontent2");
+    content.classList.toggle("activecontent");
+    document.querySelector(".pre").style.visibility = "hidden";
+    document.querySelector(".go").style.visibility = "hidden";
+    return;
+  }
+  if(num==3){
+    var content = document.querySelector(".costcontent3");
+    content.classList.toggle("activecontent");
+    document.querySelector(".pre").style.visibility = "hidden";
+    document.querySelector(".go").style.visibility = "hidden";
+    return;
+  }
 }
 
 function next() {
-  let page = document.querySelector("figure").style.transform;
+  let page = document.querySelector("figure.activecontent").style.transform;
 
   if(page == "translateX(-20%)"){
-    document.querySelector(".frame figure").style.transform = "translateX(-40%)";
+    document.querySelector("figure.activecontent").style.transform = "translateX(-40%)";
     return;
   }
   if(page == "translateX(-40%)"){
-    document.querySelector(".frame figure").style.transform = "translateX(-60%)";
+    document.querySelector("figure.activecontent").style.transform = "translateX(-60%)";
     return;
   }
   if(page == "translateX(-60%)"){
-    document.querySelector(".frame figure").style.transform = "translateX(-80%)";
+    document.querySelector("figure.activecontent").style.transform = "translateX(-80%)";
     document.querySelector(".go").style.visibility = "hidden";
     return;
   }
   else{
-    document.querySelector(".frame figure").style.transform = "translateX(-20%)";
+    document.querySelector("figure.activecontent").style.transform = "translateX(-20%)";
     document.querySelector(".pre").style.visibility = "visible";
     return;
   }
 }
 
 function pre() {
-  let page = document.querySelector("figure").style.transform;
+  let page = document.querySelector("figure.activecontent").style.transform;
 
   if(page == "translateX(-20%)"){
-    document.querySelector(".frame figure").style.transform = "translateX(0%)";
+    document.querySelector("figure.activecontent").style.transform = "translateX(0%)";
     document.querySelector(".pre").style.visibility = "hidden";
     document.querySelector(".go").style.visibility = "visible";
     return;
   }
   if(page == "translateX(-40%)"){
-    document.querySelector(".frame figure").style.transform = "translateX(-20%)";
+    document.querySelector("figure.activecontent").style.transform = "translateX(-20%)";
     return;
   }
   if(page == "translateX(-60%)"){
-    document.querySelector(".frame figure").style.transform = "translateX(-40%)";
+    document.querySelector("figure.activecontent").style.transform = "translateX(-40%)";
     return;
   }
   if(page == "translateX(-80%)"){
-    document.querySelector(".frame figure").style.transform = "translateX(-60%)";
+    document.querySelector("figure.activecontent").style.transform = "translateX(-60%)";
     document.querySelector(".go").style.visibility = "visible";
     return;
   }
